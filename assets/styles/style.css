@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'MAK';
+    src: url('../fonts/MAK.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --font1: 'MAK', sans-serif;
+    --font2: 'Lato', sans-serif;
+
+    --color1: #2D3540;
+    --color2: #FCF3E1;
+    --color3: #D97171;
+}
+
+body {
+    background: var(--color1);
+}
+
+.lines {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/lines.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.05;
+}
+
+header, nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15vh;
+}
+
+.header__links1 {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: var(--color2);
+    text-transform: uppercase;
+    font-family: var(--font2);
+}
+
+.header__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0.5rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--color2);
+}
+
+.menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    font-family: var(--font2);
+}
+
+.menu a {
+    color: var(--color2);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.slogan__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    color: var(--color2);
+}
+
+.hero {
+    background: url('../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33%;
+    height: 66vh;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 120px 240px 120px;
+    border-color: transparent transparent var(--color3) transparent;
+    position: absolute;
+}
+
+.triangle1 {
+    top: 10%;
+    left: 20%;
+    transform: rotate(30deg);
+}
+
+.triangle2 {
+    top: 27%;
+    right: 10%;
+    transform: rotate(70deg);
+    z-index: 20;
+    border-width: 0 100px 200px 100px;
+}
+
+.triangle3 {
+    bottom: 10%;
+    left: 40%;
+    transform: rotate(300deg);
+    z-index: 20;
+    border-width: 0 100px 200px 100px;
+}
